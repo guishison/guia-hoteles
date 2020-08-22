@@ -7,3 +7,6 @@
     background-color: yellow;
     margin-bottom: 0px;
 }
+#Footer .content{
+    display: flex;
+}
