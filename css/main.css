@@ -11,3 +11,6 @@
 #Footer .content{
     display: flex;
 }
+.footer-address-icon{
+    padding-right: 10px;
+}
