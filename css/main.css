@@ -3,10 +3,19 @@
     color: black;
     margin-top: 50px;
 }
-.footer{
+footer{
     padding: 10px 10px 0px 10px;
     background-color: yellow;
     margin-bottom: 0px;
+    margin-top: 10px;
+}
+.card-hotel{
+    flex: 1 200px;
+    margin-top: 10px;
+}
+.btn-reserva{
+    width: 100%;
+    border-radius: 0px;
 }
 #Footer .content{
     display: flex;
