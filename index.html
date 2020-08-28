@@ -87,7 +87,7 @@
                     </p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva"><span
+                    <button type="button" class="btn btn-primary btn-reserva"><span
                             class="oi oi-plus footer-address-icon"></span>Reservar</button>
                 </div>
             </div>
@@ -101,7 +101,7 @@
                     </p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva"><span
+                    <button type="button" class="btn btn-primary btn-reserva"><span
                             class="oi oi-plus footer-address-icon"></span>Reservar</button>
                 </div>
             </div>
@@ -115,7 +115,7 @@
                     </p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva"><span
+                    <button type="button" class="btn btn-primary btn-reserva"><span
                             class="oi oi-plus footer-address-icon"></span>Reservar</button>
                 </div>
             </div>
@@ -129,7 +129,7 @@
                     </p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva"><span
+                    <button type="button" class="btn btn-primary btn-reserva"><span
                             class="oi oi-plus footer-address-icon"></span>Reservar</button>
                 </div>
             </div>
@@ -143,7 +143,7 @@
                     </p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva"><span
+                    <button type="button" class="btn btn-primary btn-reserva"><span
                             class="oi oi-plus footer-address-icon"></span>Reservar</button>
                 </div>
             </div>
@@ -157,7 +157,7 @@
                     </p>
                 </div>
                 <div>
-                    <button class="btn btn-success btn-reserva"><span
+                    <button type="button" class="btn btn-success btn-reserva"><span
                             class="oi oi-plus footer-address-icon"></span>Reservar</button>
                 </div>
             </div>
@@ -169,10 +169,38 @@
                     <p class="card-text">
                         Hotel ubicado en pleno centro.
                     </p>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
                 </div>
                 <div>
-                    <button class="btn btn-warning btn-reserva"><span
+                    <button type="button" class="btn btn-warning btn-reserva"><span
                             class="oi oi-plus footer-address-icon"></span>Reservar</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-tittle" id="exampleModalLabel">Contacto con el hotel</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Tu Email:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="messaje-text" class="col-form-label">Mensaje:</label>
+                                <textarea class="form-control" id="messaje-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sussess">Enviar</button>
+                    </div>
                 </div>
             </div>
         </div>
