@@ -41,18 +41,29 @@
         </nav>
         <div class="row">
             <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">¿Cómo funciona?</button>
+        </div>
+            <div class="col-sm-4">                
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false" aria-controls="multiCollapse2">¿Dónde puedo reservar?</button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multiCollapse3">¿Cómo pago?</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 collapse multi-collapse" id="funciona">
                 <p>
                 <h3>¿Cómo funciona?</h3>
                 <p>Buscá los hoteles de acuerdo a tu preferencia.</p>
                 </p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 collapse multi-collapse" id="reserva">
                 <p>
                 <h3>¿Donde puedo reservar?</h3>
                 <p>Elegia la ciudad que te interese y luego realizá la reserva con tus datos.</p>
                 </p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 collapse multi-collapse" id="pago">
                 <p>
                 <h3>¿Cómo pago?</h3>
                 <p>Utiliza tu tarjeta favorita.</p>
@@ -150,7 +161,7 @@
                             class="oi oi-plus footer-address-icon"></span>Reservar</button>
                 </div>
             </div>
-            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">                
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                 <img src="images/7.jpg" class="card-img-top" alt="Responsive Image">
                 <div class="card-body">
                     <h5 class="card-tittle">Hotel San Pablo <span class="badge badge-warning">Nuevo</span></h5>
