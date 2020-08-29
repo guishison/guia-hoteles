@@ -49,3 +49,12 @@ footer{
 .tab-content{
     padding-top: 10px;
 }
+.popover-title,
+.popover-content,.popover-header {
+    background-color: #0f0369 !important;
+    color: white;
+}
+.popover-body {
+    background-color: #352a89 !important;
+    color: white;
+}
