@@ -202,7 +202,7 @@
                     <p class="card-text">
                         Hotel ubicado en pleno centro.
                     </p>
-                    <button type="button" class="btn btn-outline-success" data-toggle="modal"
+                    <button type="button" class="btn btn-outline-success" id="contactoBtn" data-toggle="modal"
                         data-target="#contacto">Contacto</button>
                 </div>
                 <div>
@@ -234,7 +234,7 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-sussess">Enviar</button>
+                        <button type="button" class="btn btn-success">Enviar</button>
                     </div>
                 </div>
             </div>
@@ -291,6 +291,28 @@
             $('[data-toggle="popover"]').popover();
             $('.carousel').carousel({
                 interval: 2000
+            });
+            $('#contacto').on('show.bs.modal',function(e){
+                console.log('el modal se está mostrando');
+
+                $('#contactoBtn').removeClass('btn-outline-success');
+                $('#contactoBtn').addClass('btn-primary');
+                $('#contactoBtn').prop('disabled', true);
+
+
+            });
+            $('#contacto').on('shown.bs.modal',function(e){
+                console.log('el modal se mostro');
+            });
+            $('#contacto').on('hide.bs.modal',function(e){
+                console.log('el modal contacto se oculta');
+            });
+            $('#contacto').on('hidden.bs.modal',function(e){
+                console.log('el modal contacto se oculto');
+                
+                $('#contactoBtn').removeClass('btn-primary');
+                $('#contactoBtn').addClass('btn-outline-success');
+                $('#contactoBtn').prop('disabled', false);
             });
         })
     </script>
