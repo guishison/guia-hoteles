@@ -41,13 +41,16 @@
         </nav>
         <div class="row">
             <div class="col-sm-4">
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">¿Cómo funciona?</button>
-        </div>
-            <div class="col-sm-4">                
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false" aria-controls="multiCollapse2">¿Dónde puedo reservar?</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona"
+                    aria-expanded="false" aria-controls="multiCollapse1">¿Cómo funciona?</button>
             </div>
             <div class="col-sm-4">
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multiCollapse3">¿Cómo pago?</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva"
+                    aria-expanded="false" aria-controls="multiCollapse2">¿Dónde puedo reservar?</button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago"
+                    aria-expanded="false" aria-controls="multiCollapse3">¿Cómo pago?</button>
             </div>
         </div>
         <div class="row">
@@ -94,7 +97,8 @@
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                 <img src="images/2.jpg" class="card-img-top" alt="Responsive Image">
                 <div class="card-body">
-                    <h5 class="card-tittle">Hotel Buenos Aires</h5>
+                    <h5 class="card-tittle" data-toggle="tooltip" data-placement="top"
+                        title="Las primeras reservas cuentan con clases de tango gratis!">Hotel Buenos Aires</h5>
                     <h6 class="card-subtittle text-muted">Argentina</h6>
                     <p class="card-text">
                         Hotel ubicado en pleno centro.
@@ -169,7 +173,8 @@
                     <p class="card-text">
                         Hotel ubicado en pleno centro.
                     </p>
-                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal"
+                        data-target="#contacto">Contacto</button>
                 </div>
                 <div>
                     <button type="button" class="btn btn-warning btn-reserva"><span
@@ -177,7 +182,8 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -206,48 +212,55 @@
         </div>
     </div>
     <br>
+    <footer class="footer" id="Footer">
+        <div class="content">
+            <div class="col-sm-4">
+                <section>
+                    <article>
+                        <h3>Acerca de nuestro sitio web</h3>
+                        <p>Somos una empresa especializada en el diseño, publicidad por whatsapp, desarrollo de paginas
+                            y
+                            sistemas Web. Brindamos un servicio integrales enfocados en resaltar su marca en el entorno
+                            digital y brindándoles servicios y soluciones innovadoras.</p>
+                    </article>
+                </section>
+            </div>
+            <div class="col-sm-4">
+                <address>
+                    <article>
+                        <h3>Oficina Central</h3>
+                        <p><span class="oi oi-home footer-address-icon"></span>Santa Cruz 25, Bolivia</p>
+                        <p><span class="oi oi-phone footer-address-icon"></span> +59172191679</p>
+                        <p><span class="oi oi-inbox footer-address-icon"></span>administracion@nagatoshis.com</p>
+                    </article>
+                </address>
+            </div>
+            <div class="col-sm-4">
+                <section>
+                    <h4>Siguenos</h4>
+                    <ul class="plain">
+                        <li><a href="https://twitter.com/nagatoshis">Twitter</a></li>
+                        <li><a href="https://fb.me/nagatoshis/">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+
+                    </ul>
+                </section>
+            </div>
+
+
+        </div>
+    </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </body>
-<footer class="footer" id="Footer">
-    <div class="content">
-        <div class="col-sm-4">
-            <section>
-                <article>
-                    <h3>Acerca de nuestro sitio web</h3>
-                    <p>Somos una empresa especializada en el diseño, publicidad por whatsapp, desarrollo de paginas y
-                        sistemas Web. Brindamos un servicio integrales enfocados en resaltar su marca en el entorno
-                        digital y brindándoles servicios y soluciones innovadoras.</p>
-                </article>
-            </section>
-        </div>
-        <div class="col-sm-4">
-            <address>
-                <article>
-                    <h3>Oficina Central</h3>
-                    <p><span class="oi oi-home footer-address-icon"></span>Santa Cruz 25, Bolivia</p>
-                    <p><span class="oi oi-phone footer-address-icon"></span> +59172191679</p>
-                    <p><span class="oi oi-inbox footer-address-icon"></span>administracion@nagatoshis.com</p>
-                </article>
-            </address>
-        </div>
-        <div class="col-sm-4">
-            <section>
-                <h4>Siguenos</h4>
-                <ul class="plain">
-                    <li><a href="https://twitter.com/nagatoshis">Twitter</a></li>
-                    <li><a href="https://fb.me/nagatoshis/">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-
-                </ul>
-            </section>
-        </div>
-
-
-    </div>
-</footer>
 
 </html>
