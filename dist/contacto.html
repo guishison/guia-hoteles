@@ -7,11 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <!-- build:css css/index.css -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
-    <!-- endbuild -->
+    <link rel="stylesheet" href="css/index.eebe0dc7bb5327e19d20.css">
     <title>Hoteles</title>
 </head>
 
@@ -25,10 +21,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item active"><a class="nav-link" href="about.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
                 <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Términos y Condiciones</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item active"><a class="nav-link" href="contacto.html">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -37,20 +33,59 @@
     </div>
     <div class="container">
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">                
-              <li class="breadcrumb-item" aria-current="page"><a href="index.html">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" aria-current="page"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
             </ol>
-          </nav>
-        <span>
-            What is Lorem Ipsum?
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.
-        </span>
+        </nav>
+
+        <h1>Dejame tu comentario</h1>
+
+        <form>
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+                </div>
+            </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+                </div>
+            <div class="form-row">
+                <div class="form-group col-sm-9">
+                    <label for="domicilio">Domicilio</label>
+                    <input type="text" class="form-control" id="domicilio" placeholder="Ingrese su domicilio">
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="provincia">Provincia</label>
+                    <select id="provincia" class="form-control">
+                        <option selected>Andres Ibañez</option>
+                        <option>Warnes</option>
+                        <option>Montero</option>
+                        <option>Cotoca</option>
+                        <option>Portachuelo</option>
+                        <option>San Carlos</option>
+                        <option>Buena Vista</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comentario">Comentario</label>
+                <textarea id="comentario" rows="10" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" id=gridCheck>
+                        <label for="gridCheck" class="form-check-label">Quiero que me contacten</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
     </div>
     <br>
 <footer class="footer" id="Footer">
@@ -93,11 +128,6 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- build:js js/main.js -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
-    <!-- endbuild -->
+    <script src="js/main.521cb984a10e4eb1be7f.js"></script>
 </body>
 </html>
