@@ -1,0 +1,67 @@
+@yellow: #e0dd19;
+
+body, html {
+    height: 100%; }
+  
+.margenes(@top, @botton) {
+    margin-top: @top;
+    margin-bottom: @botton;
+}
+  .jumbotron {
+    background-color: @yellow;
+    color: #0e120e;    
+    .margenes(50px, 10px);
+}
+  
+  footer {
+    padding: 10px 10px 0px 10px;
+    background-color: @yellow;
+    .margenes(10px, 10px);
+ }
+  
+  .card-hotel {
+    flex: 1 200px;
+    margin-top: 10px;
+    margin-bottom: 0px; }
+  
+  .btn-reserva {
+    width: 100%;
+    border-radius: 0px; }
+  
+  #Footer .content {
+    display: flex; }
+  
+  .footer-address-icon {
+    padding-right: 10px; }
+  
+  .hero-image {
+    /*background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/banner.jpg");
+     */
+    height: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 15px; }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff; }
+  
+  .tab-content {
+    padding-top: 10px; }
+  
+  .popover-title,
+  .popover-content, .popover-header {
+    background-color: #0f4f05 !important;
+    color: #ffffff; }
+  
+  .popover-body {
+    background-color: #9b210b !important;
+    color: #ffffff; }
+  
