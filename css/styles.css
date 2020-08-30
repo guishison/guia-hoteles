@@ -3,7 +3,7 @@ body, html {
 
 .jumbotron {
   background-color: #e0dd19;
-  color: black;
+  color: #0e120e;
   margin-top: 50px;
   margin-bottom: 10px; }
 
@@ -45,16 +45,16 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white; }
+  color: #ffffff; }
 
 .tab-content {
   padding-top: 10px; }
 
 .popover-title,
 .popover-content, .popover-header {
-  background-color: #0f0369 !important;
-  color: white; }
+  background-color: #0f4f05 !important;
+  color: #ffffff; }
 
 .popover-body {
-  background-color: #352a89 !important;
-  color: white; }
+  background-color: #9b210b !important;
+  color: #ffffff; }

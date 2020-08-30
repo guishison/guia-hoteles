@@ -1,21 +1,31 @@
 $yellow: #e0dd19;
+$red: #9b210b;
+$green: #0f4f05;
+$black: #0e120e;
+$white: #ffffff;
 
 @mixin margenes($top, $botton) {
     margin-top: $top;
     margin-bottom: $botton;
 }
+@mixin paddingconfig($top,$right,$botton,$left) {
+    padding: $top $right $botton $left;
+}
 
+@mixin colores($color){
+    color: $color;
+}
 body, html {
     height: 100%;
 }
 
 .jumbotron{
     background-color: $yellow;
-    color: black;
+    color: $black;
     @include margenes(50px, 10px);
 }
 footer{
-    padding: 10px 10px 0px 10px;
+    @include paddingconfig(10px, 10px, 0px, 10px);
     background-color:$yellow;
     @include margenes(10px, 0px);
 }
@@ -50,17 +60,17 @@ footer{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    @include colores($white);
 }
 .tab-content{
     padding-top: 10px;
 }
 .popover-title,
 .popover-content,.popover-header {
-    background-color: #0f0369 !important;
-    color: white;
+    background-color: $green !important;
+    @include colores($white);
 }
 .popover-body {
-    background-color: #352a89 !important;
-    color: white;
+    background-color: $red !important;
+    @include colores($white);
 }
