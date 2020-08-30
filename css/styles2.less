@@ -1,4 +1,5 @@
-@yellow: #e0dd19;
+@yellow: #09ff43;
+@white: #ffffff;
 
 body, html {
     height: 100%; }
@@ -7,6 +8,13 @@ body, html {
     margin-top: @top;
     margin-bottom: @botton;
 }
+.paddingconfig(@top,@right,@botton,@left) {
+    padding: @top @right @botton @left;
+}
+
+.colores(@color){
+    color: @color;
+}
   .jumbotron {
     background-color: @yellow;
     color: #0e120e;    
@@ -14,15 +22,15 @@ body, html {
 }
   
   footer {
-    padding: 10px 10px 0px 10px;
+    .paddingconfig(10px,10px,0px,10px);
     background-color: @yellow;
     .margenes(10px, 10px);
  }
   
   .card-hotel {
     flex: 1 200px;
-    margin-top: 10px;
-    margin-bottom: 0px; }
+    .margenes(10px,0px);
+}
   
   .btn-reserva {
     width: 100%;
@@ -51,7 +59,8 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ffffff; }
+    .colores(@white); 
+}
   
   .tab-content {
     padding-top: 10px; }
@@ -59,9 +68,11 @@ body, html {
   .popover-title,
   .popover-content, .popover-header {
     background-color: #0f4f05 !important;
-    color: #ffffff; }
+    .colores(@white); 
+ }
   
   .popover-body {
     background-color: #9b210b !important;
-    color: #ffffff; }
+    .colores(@white); 
+ }
   
